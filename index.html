@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Jerome Banawa</a></div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="index.html">Jerome Banawa</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="quizzes.html" onclick="toggleMenu()">Quizzes</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="final.png" alt=" profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jerome Banawa</h1>
+        <p class="section__text__p2">IT Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('resumejer.docx')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#cont'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jerome-banawa-0b6752362'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/jeromebanawa'"
+          />
+        </div>
+      </div>
+    </section>
+      <footer>
+        <div id="cont">
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"/>
+          <p><a href="mailto:examplemail@gmail.com">My Email</a> | </p>
+              <p>
+                <a href="https://www.linkedin.com/in/jerome-banawa-0b6752362" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
+                <a href="https://github.com/jeromebanawa" target="_blank"><i class="fab fa-github"></i> GitHub</a> | 
+                <a href="https://www.facebook.com/share/1PURBBtcgU/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> | 
+                <a href="https://www.instagram.com/jeroooome._?igsh=MTVqMWdwbm8zcnNnaQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </footer> 
+    <script src="js.js"></script>
+  </body>
+</html>

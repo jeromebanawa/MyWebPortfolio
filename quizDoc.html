@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .image-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .image-card-lq {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .image-card img {
+      width: 50%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .image-card-lq img {
+      width: 50%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .caption {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+      color: #555;
+      font-weight: bold;
+    }
+    .go-back-button {
+      display: block;
+      margin: 40px auto 0;
+      padding: 10px 20px;
+      border: rgb(53, 53, 53) 0.1rem solid;
+      background: rgb(53, 53, 53);
+      color: white;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+      transition: all 300ms ease;
+      padding: 1rem;
+      width: 8rem;
+      border-radius: 2rem;
+    }
+    .go-back-button:hover {
+        border: rgb(255, 255, 255) 0.1rem solid;    
+    }
+  </style>
+</head>
+<body>
+
+    <h1>Pre-Test From 1-5</h1>
+
+  <div class="gallery">
+    <div class="image-card">
+        <div class="caption">Module 1: Introduction to HCI</div>
+      <img src="p1.jpg" alt="Step 1">
+    </div>
+    <div class="image-card">
+        <div class="caption">Module 2: HCI & User-Centered Design</div>
+      <img src="p2.jpg" alt="Step 2">
+    </div>
+    <div class="image-card">
+        <div class="caption">Module 3: Usability Principles & Heuristic Evaluation</div>
+      <img src="p3.jpg" alt="Step 3">
+    </div>
+    <div class="image-card">
+        <div class="caption">Module 4: Interaction Design & Prototyping</div>
+        <img src="p4.jpg" alt="Step 3">
+      </div>
+      <div class="image-card">
+        <div class="caption">Module 5: Information Architecture & Navigation Design</div>
+        <img src="p5.jpg" alt="Step 3">
+      </div>
+  </div>
+
+  <h1>Post-Test From 1-5</h1>
+
+  <div class="gallery">
+    <div class="image-card">
+        <div class="caption">Module 1: Introduction to HCI</div>
+      <img src="q1.jpg" alt="Step 1">
+    </div>
+    <div class="image-card">
+        <div class="caption">Module 2: HCI & User-Centered Design</div>
+      <img src="q2.jpg" alt="Step 2">
+    </div>
+    <div class="image-card">
+        <div class="caption">Module 3: Usability Principles & Heuristic Evaluation</div>
+      <img src="q3.jpg" alt="Step 3">
+    </div>
+    <div class="image-card">
+        <div class="caption">Module 4: Interaction Design & Prototyping</div>
+        <img src="q4.jpg" alt="Step 3">
+      </div>
+      <div class="image-card">
+        <div class="caption">Module 5: Information Architecture & Navigation Design</div>
+        <img src="q5.jpg" alt="Step 3">
+      </div>
+  </div>
+
+  <h1>Long Quiz - Mid-term</h1>
+
+  <div class="gallery">
+    <div class="image-card-lq">
+        <div class="caption">Module 1: Introduction to HCI</div>
+      <img src="lq.jpg" alt="Step 1">
+    </div>
+  </div>
+
+  <h1>Mid-Term Examintion</h1>
+
+  <div class="gallery">
+    <div class="image-card-lq">
+        <div class="caption">Module 1: Introduction to HCI</div>
+      <img src="mt.jpg" alt="Step 1">
+    </div>
+  </div>
+
+  <button class="go-back-button" onclick="history.back('quizzes.html')">Go Back</button>
+
+</body>
+</html>
+

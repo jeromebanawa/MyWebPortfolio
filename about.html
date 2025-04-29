@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Jerome Banawa</a></div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="projects.html">Projects</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="index.html">Jerome Banawa</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="quizzes.html" onclick="toggleMenu()">Quizzes</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+
+        </div>
+      </div>
+    </nav>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="fibal2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Basic Programming Skills in:  <br /><b>C++, Java, and C#</b></p>
+              <p>Basic Web development knowledge in:  <br /> <b>HTML, CSS, and JavaScript</b></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Currently Studying at CVSU-Silang, BSIT
+                <br />Graduated at ALLSHS, TVL(SMAW) 
+                <br />Secondary Education at Carmona National High School
+                <br />Primary Education at Bancal Elementary School</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello I'm Jerome R. Banawa. I love to play Online Games like Mobile Legends, Clash of Clans, and PUBG Mobile, Reading Manga and to Sleep. 
+              I have Experience in using Java, C++, and C# but I still need to improve my skills and also I also can do HTML, CSS, and JavaScript. 
+              I have a Short term and Long term goals. My short term goal is to Graduate in Collage and my Long term goal is to improve my Skills and to have a stable work that is related in IT.
+              I enjoy on learning new technologies, working on interesting projects, and connecting with people that i care. I'm eager to find new challenges and opportunities to Improve my skills and to grow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <script src="js.js"></script>
+  </body>
+</html>
